@@ -1,0 +1,25 @@
+.not-found-container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+.not-found-h2 {
+    size:18rem ;
+    color:#FF6060;
+    font-weight: 700;
+}
+
+.not-found-h3 {
+    size: 2.25rem;  
+    color: #FF6060;
+    font-weight: 500;
+
+}
+
+a {
+    size: 1.125rem;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: underline;
+}

@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className='home-navbar'>
         <div>
-            <img src="logo-desktop.png" alt="logo du site kasa orange" />
+            <img className='home-navbar-logo' src="logo-desktop.png" alt="logo du site kasa orange" />
         </div>
         <ul className='home-navbar-ul'>
             <a href="">

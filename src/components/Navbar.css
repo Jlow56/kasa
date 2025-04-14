@@ -12,3 +12,31 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+@media screen and (max-width : 375px) 
+{
+    .home-navbar-logo {
+        width: 145px;
+        height: 47px;
+    }
+
+    .home-navbar-ul {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    .banner-container {
+        width: 335px;
+        height: 111px;
+    }  
+    
+    .banner-img {
+        width: 335px;
+        height: 111px;
+    }
+
+    .banner-text {
+        left: 40%;
+        text-align: left;
+    }
+}

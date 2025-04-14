@@ -1,8 +1,8 @@
 import React from 'react';
 import "./App.css";
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Card from './components/Card'; // Assurez-vous que Cards est correctement défini dans ce chemin
+import Navbar from '../components/Navbar';
+import Banner from '../layouts/Banner';
+import Card from '../components/Card'; 
 
 function App() {
   return (
@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+

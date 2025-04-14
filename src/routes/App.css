@@ -65,9 +65,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.w1240 {
-  width: 1240px;
-}
+
 
 .flex {
   display: flex;
@@ -92,3 +90,25 @@ a:active {
   display: flex;
   flex-direction: column;
 }
+
+/* media screen */
+@media screen and (min-width: 1440px) {
+  .w1240 {
+      width: 1240px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  #root {
+    align-items: center;
+    width: 335px;
+    height: 938px;
+  }
+
+  .home-header {
+    width: 335px;
+  }
+  
+}
+
