@@ -1,25 +1,41 @@
 import React from 'react';
-import "./App.css";
-import Navbar from '../components/Navbar';
-import Banner from '../layouts/Banner';
-import Card from '../components/Card'; 
+// Routes
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+// Pages templates
+import HomePage from '../pages/Home';
+import AboutPage from '../pages/About';
+import HousingPage from '../pages/Housing';
+import ErrorPage from '../pages/Error';
+// Layouts
+import Header from '../layouts/Header';
+import Main from '../layouts/Main';
+import Footer from '../layouts/Footer';
 
-function App() {
+function StaticLayout() {
   return (
     <>
-      <header className='w1240 flex home-header'>
-        <Navbar />
-        <Banner />
-      </header>
-      <main className='w1240 flex'>
-        <Card/>
-      </main>
-      <footer>
-
-      </footer>
+      <Header />
+      <Main>
+        <Outlet />
+      </Main>
+      <Footer />  
     </>
   );
 }
 
-export default App;
+const AppRouter = () => 
+  (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<StaticLayout/>}>
+          <Route path="Home" index element={<HomePage/>} />
+          <Route path="About" element={<AboutPage/>} />
+          <Route path="Housing/:id" element={<HousingPage />} />
+          <Route path="*" element={<ErrorPage/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+
+export default AppRouter;
 

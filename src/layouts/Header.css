@@ -15,6 +15,10 @@
 
 @media screen and (max-width : 375px) 
 {
+    .header {
+        width: 335px;
+    }
+
     .home-navbar-logo {
         width: 145px;
         height: 47px;
@@ -29,7 +33,7 @@
         width: 335px;
         height: 111px;
     }  
-    
+
     .banner-img {
         width: 335px;
         height: 111px;

@@ -65,8 +65,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .flex {
   display: flex;
 }
@@ -98,17 +96,11 @@ a:active {
   }
 }
 
-
 @media screen and (max-width: 375px) {
   #root {
     align-items: center;
     width: 335px;
     height: 938px;
   }
-
-  .home-header {
-    width: 335px;
-  }
-  
 }
 

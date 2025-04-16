@@ -1,13 +1,13 @@
 import React from "react";
-import "./Homepage.scss";
+import "./Home.css";
 import Banner from "../layout/Banner.jsx";
-import ApartmentGrid from "../components/ApartmentGrid.jsx";
+import Apartment from "../components/ShowCards.jsx";
 
-function HomePage() {
+const HomePage = () => {
   return (
     <>
       <Banner />
-      <ApartmentGrid />
+      <Apartment/>
     </>
   );
 }

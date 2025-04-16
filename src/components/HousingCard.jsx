@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Appartement.css"
+import "./Card.css"
 
-function Appartement() {
+function HousingCard() {
   return (
     <div className='appartement-container'>
         <a className='appartement-link' href="">
@@ -13,4 +13,4 @@ function Appartement() {
   )
 }
 
-export default Appartement
+export default HousingCard
