@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Error.css";
 
-export function ErrorPage() {
+const ErrorPage = () => {
   return (
     <>
       <div className="not-found-container flex">
@@ -12,4 +12,6 @@ export function ErrorPage() {
       </div>
     </>
   );
-}
+};
+
+export default ErrorPage;

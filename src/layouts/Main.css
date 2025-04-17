@@ -1,0 +1,6 @@
+.main-container {
+    display: flex;
+    gap: 3.125rem;
+    flex-direction: column;
+    max-width: 1240px;
+}

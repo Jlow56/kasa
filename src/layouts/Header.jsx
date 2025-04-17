@@ -4,14 +4,14 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className= 'header w1240 flex header'>
-        <nav className='home-navbar'>
+    <header className= 'header w1240 flex'>
+        <nav className='header-navbar'>
             <NavLink to="/">
                 <div>
-                    <img className='home-navbar-logo' src="logo-desktop.png" alt="logo de kasa orange" />
+                    <img className='header-navbar-logo' src="logo-desktop.png" alt="logo de kasa orange" />
                 </div>
             </NavLink>
-            <ul className='home-navbar-ul'>
+            <ul className='header-navbar-ul'>
                 <li>
                     <NavLink to="/">
                         Accueil

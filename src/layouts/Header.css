@@ -1,12 +1,13 @@
-.home-navbar {
-    display: flex; 
+.header-navbar {
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
     padding: 0;
     justify-content: space-between;
+    width: 100%;
 }
 
-.home-navbar-ul {
+.header-navbar-ul {
     display: flex;
     gap: 2rem;
     font-size: 1.5rem;
@@ -19,12 +20,12 @@
         width: 335px;
     }
 
-    .home-navbar-logo {
+    .header-navbar-logo {
         width: 145px;
         height: 47px;
     }
 
-    .home-navbar-ul {
+    .header-navbar-ul {
         font-size: 0.75rem;
         text-transform: uppercase;
     }
