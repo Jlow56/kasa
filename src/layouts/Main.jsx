@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./Main.css";
 
 const Main = ({ children }) => {
-  return <main className="main-container">{children}</main>;
+  return <main className="main-container w1240">{children}</main>;
 };
 
 Main.propTypes = {

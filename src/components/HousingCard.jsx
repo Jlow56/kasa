@@ -1,16 +1,20 @@
-import React from 'react';
-import "./Card.css"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import "./HousingCard.scss";
 
-function HousingCard() {
-  return (
-    <div className='appartement-container'>
-        <a className='appartement-link' href="">
-            <h1 className='appartement-title'>
-                Titre de la location
-            </h1>
-        </a>
-    </div>
-  )
-}
+const HousingCard = ({ id, cover, title }) => (
+  <Link to={`/housing/${id}`} className="housing-card-container">
+    <img className="housing-card-img" src={cover} alt={title} />
+    <figcaption className="housing-card-title">{title}</figcaption>
+  </Link>
+);
 
-export default HousingCard
+HousingCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+};
+
+export default HousingCard;

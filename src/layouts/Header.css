@@ -9,7 +9,7 @@
 
 .header-navbar-ul {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     font-size: 1.5rem;
     font-weight: 500;
 }

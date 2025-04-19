@@ -1,15 +1,29 @@
 import React from 'react';
-import "./Banner.css"
+import { useLocation } from 'react-router-dom';
+import "./Banner.css";
 
 function Banner() {
-  return (
-    <div className='banner-container'>
-      <img className='banner-img' src="banner.png" alt="paysage de montagne" />
-      <div className='banner-text'>
-        <h1>Chez vous, partout et ailleurs</h1>
+  const location = useLocation();
+
+  if (location.pathname === "/") {
+    return (
+      <figure className='banner-home-container'>
+        <img className='banner-home-img' src="home-banner.png" alt="paysage de rivage avec la montagne" />
+        <div className='banner-home-text'>
+          <h1>Chez vous, partout et ailleurs</h1>
+        </div>
+      </figure>
+    );
+  }
+  if (location.pathname === "/about") {
+    return (
+      <div className='banner-about-container'>
+        <img className='banner-about-img' src="about-banner.png" alt="paysage de montagne" />
       </div>
-    </div>
-  )
+    );
+  }
+
+  return null;
 }
 
-export default Banner
+export default Banner;
