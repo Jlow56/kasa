@@ -8,7 +8,7 @@ function Header() {
         <nav className='header-navbar'>
             <NavLink to="/">
                 <div>
-                    <img className='header-navbar-logo' src="./logo-desktop.png" alt="logo de kasa orange" />
+                    <img className='header-navbar-logo' src="../logo-desktop.png" alt="logo de kasa orange" />
                 </div>
             </NavLink>
             <ul className='header-navbar-ul'>

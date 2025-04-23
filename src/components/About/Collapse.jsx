@@ -21,7 +21,7 @@ function Collapse(props) {
                 {!openTab ? <i className="collapse_header_icon">{chevronDown}</i> : <i className="collapse_header_icon">{chevronUp}</i>}
             </div>
             {openTab &&
-                <div className="collapse_content">{props.content}</div>
+                <div className="collapse_content">{props.children}</div>  
             }
         </>
     )

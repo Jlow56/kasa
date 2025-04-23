@@ -1,0 +1,30 @@
+.housing-collapse-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .collapse_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        width: 43%;
+        height: 52px;
+        background-color: #FF6060;
+        padding-inline: 1rem;
+        border-radius: 10px;
+    }
+
+    .collapse_header_title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 143%;
+        color: #FFFFFF;
+    }
+
+    .collapse_header_icon {
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+}

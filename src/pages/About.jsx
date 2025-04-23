@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../layouts/Banner";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/About/Collapse";
 import about from "../datas/about.json";    
 import "./About.css";                     
 
@@ -12,8 +12,7 @@ const AboutPage = () => {
         {about.map(({ id, title, content }) => (
           <div className="about-container" key={id}>
             <Collapse title={title}>
-              <p>{content}</p>
-              consoloe.log(content);
+              <p className="about-p">{content}</p>
             </Collapse>
           </div>
         ))}

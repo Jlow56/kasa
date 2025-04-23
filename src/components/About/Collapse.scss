@@ -5,6 +5,13 @@
   align-items: center;
   justify-content: center;
 
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .collapse_header {
     display: flex;
     justify-content: space-between;
@@ -27,4 +34,18 @@
    padding-right: 1rem;
    font-size: 24px;
   }
+
+  .collapse_content {
+    width: 1023px;
+    background-color: #F6F6F673;
+    border-radius: 5px;
+  }
+
+  .about-p {
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 143%;
+  }
+
 }
