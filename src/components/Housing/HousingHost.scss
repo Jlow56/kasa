@@ -11,16 +11,21 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    gap: 0.5rem;
 
     .housing-host-name {
         font-weight: 500;
         font-size: 1.125rem;
         line-height: 143%;
         color: #FF6060;
-        max-width: 65px;
+        max-width: 74px;
         max-height: fit-content;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        text-align: right;
     }
     
     .housing-host-picture {
