@@ -1,5 +1,5 @@
 import React from 'react';
-import Slideshow from "../components/Housing/Slideshow";
+import SlideShow from "../components/Housing/SlideShow.jsx";
 import HousingDetails from "../components/Housing/HousingDetails"; 
 import ErrorPage from "./Error";
 import { useParams } from 'react-router-dom';
@@ -16,7 +16,7 @@ const Housing = () => {
 
   return (
     <section key={housingData.id} className="housing-container">
-      <Slideshow img={housingData.pictures} />
+      <SlideShow img={housingData.pictures} />
       <HousingDetails housingData={housingData} /> 
     </section>
   );

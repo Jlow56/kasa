@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import "./Slideshow.scss";
+import "./SlideShow.scss";
 
-function Slideshow({ img }) {
+function SlideShow({ img }) {
   const [slideId, setSlideId] = useState(0);
   const [imgWidth, setImgWidth] = useState(0);
   const imgRef = useRef(null);
@@ -22,27 +22,27 @@ function Slideshow({ img }) {
   }, []);
 
   const onNext = () => {
-    setSlideId((prev) => (prev + 1) % img.length);
+    setSlideId(prev => (prev + 1) % img.length);
   };
-
   const onPrev = () => {
-    setSlideId((prev) => (prev - 1 + img.length) % img.length);
+    setSlideId(prev => (prev - 1 + img.length) % img.length);
   };
 
   return (
-    <section className="slider-container">
-      <div className="slideshow_container" style={{ display: "flex", transition: "transform 0.3s ease-in-out",transform: `translateX(-${slideId * imgWidth}px)`}}>
-        {img.map((picture, i) => (
-          <img
-            ref={i === 0 ? imgRef : null}
-            className="slideshow-img"
-            alt={`slide-${i}`}
-            src={picture}
-            key={i}
-          />
-        ))}
+    <section className="slider-section">
+      <div
+        className="slideshow-img-container"
+        style={{
+          transform: `translateX(-${slideId * imgWidth}px)`
+        }}
+      >
+        <img
+          className="slideshow-img"
+          alt={`slide-${slideId}`}
+          src={img[slideId]}
+          key={slideId}
+        />
       </div>
-
       {img.length > 1 && (
         <>
           <div className="slideshow_controls">
@@ -53,8 +53,8 @@ function Slideshow({ img }) {
               <FontAwesomeIcon icon={faChevronRight} />
             </i>
           </div>
-          <div className="slideshow_idx">
-            {slideId + 1} / {img.length}
+          <div className="slideshow-count">
+            <p>{slideId + 1} / {img.length}</p>
           </div>
         </>
       )}
@@ -62,4 +62,4 @@ function Slideshow({ img }) {
   );
 }
 
-export default Slideshow;
+export default SlideShow;

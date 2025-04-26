@@ -21,7 +21,7 @@ function HousingDetails({ housingData }) {
       </section> 
       <section className='description-container'>
         <HousingDescription
-          descriptions={housingData.descriptions}
+          description={housingData.description}
           equipments={housingData.equipments}
         />
       </section>
