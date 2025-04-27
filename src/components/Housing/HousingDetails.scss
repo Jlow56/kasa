@@ -1,9 +1,11 @@
 .housing-details {
+    width: 100%;
+    height: auto;
     display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        gap: 1.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1.5rem;
 
     .top-container {
         display: flex;
@@ -11,6 +13,20 @@
         justify-content: space-between;
         align-items: flex-start;
         
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .housing-collapse-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
 

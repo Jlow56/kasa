@@ -19,7 +19,7 @@ function HousingDetails({ housingData }) {
           <HousingRating rating={housingData.rating} />
         </div>
       </section> 
-      <section className='description-container'>
+      <section className='housing-collapse-container'>
         <HousingDescription
           description={housingData.description}
           equipments={housingData.equipments}

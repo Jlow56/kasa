@@ -4,7 +4,7 @@ import "./HousingDescription.scss";
 
 function HousingDescription({ description, equipments }) {
   return (
-    <div className="housing-collapse-container">
+    <>
         <div className="housing-description-container">
             <Collapse title='Description'content={description}>   
                 <p  className="housing-description-p">{description}</p>
@@ -19,7 +19,7 @@ function HousingDescription({ description, equipments }) {
                 </ul>
             </Collapse>
         </div>
-    </div>
+    </>
       
     );     
 }

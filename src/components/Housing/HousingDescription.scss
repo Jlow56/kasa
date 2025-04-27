@@ -1,20 +1,13 @@
-.housing-collapse-container {
+.collapse_header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-
-    .collapse_header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        width: 43%;
-        height: 52px;
-        background-color: #FF6060;
-        padding-inline: 1rem;
-        border-radius: 10px;
-    }
+    gap: 1.5rem;
+    height: 52px;
+    background-color: #FF6060;
+    padding-inline: 1rem;
+    border-radius: 10px;
 
     .collapse_header_title {
         font-weight: 700;
@@ -22,9 +15,48 @@
         line-height: 143%;
         color: #FFFFFF;
     }
-
+    
     .collapse_header_icon {
         font-size: 24px;
         color: #FFFFFF;
+    }
+}
+
+    .collapse_content {
+        background-color: #F6F6F673;
+        padding: 2rem 1.5rem;
+    }
+
+
+
+.housing-description-container {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    height: auto;
+
+    .housing-description-p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 143%;
+        color: #000000;
+        
+    }
+}
+
+.housing-equipments-container {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    height: auto;
+
+    .housing-equipments-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 143%;
+        color: #000000;
     }
 }
