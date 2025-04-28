@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import HomeCard from "./HomeCard";
-import "./ShowCards.css";
+import "./ShowCards.scss";
 
 function ShowCards({ accomodations }) {
   return (

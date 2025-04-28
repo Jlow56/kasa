@@ -1,6 +1,16 @@
 .main-container {
     display: flex;
-    gap: 3.125rem;
     flex-direction: column;
-    max-width: 1240px;
+    align-items: center;
+    gap: 3.125rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+    .main-container {
+        width: 335px;
+        height: auto;
+        gap: 22px;
+        align-items: center;
+    }
 }

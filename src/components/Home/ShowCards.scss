@@ -1,6 +1,6 @@
 .card-container {
     width: auto;
-    max-height: 829px;
+    height: auto;
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 25px;
@@ -9,3 +9,11 @@
     gap: 40px;
 }
 
+@media screen and (max-width: 375px) {  
+    .card-container {
+        background-color: unset;
+        padding: 0px;
+        border-radius: unset;
+    }
+    
+}
