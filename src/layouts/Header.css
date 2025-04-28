@@ -41,13 +41,18 @@
         width: 100%;;
     }
 
+    .header-navbar {
+        justify-content: space-around;
+    }
+
     .header-navbar-logo {
         width: 145px;
         height: 47px;
     }
 
     .header-navbar-ul {
-        font-size: 0.75rem;
+        font-size: 9px;
+        font-weight: 500;
         text-transform: uppercase;
         gap : 2rem;
     }

@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 375px) {
     .main-container {
-        width: 335px;
+        width: 100%;
         height: auto;
         gap: 22px;
         align-items: center;
