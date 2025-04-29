@@ -18,7 +18,7 @@ function Collapse(props) {
         <>
             <div onClick={openTabHandler} className="collapse_header">
                 <h2 className="collapse_header_title">{props.title}</h2>
-                {!openTab ? <i className="collapse_header_icon">{chevronDown}</i> : <i className="collapse_header_icon">{chevronUp}</i>}
+                {!openTab ? <i className="collapse_header_icon">{chevronUp}</i> : <i className="collapse_header_icon">{chevronDown}</i>}
             </div>
             {openTab &&
                 <div className="collapse_content">{props.children}</div>  

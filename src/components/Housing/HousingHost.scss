@@ -36,3 +36,15 @@
     }
 }
 
+@media screen and (max-width: 425px) {
+    .housing-host-name {
+        font-size: 12px !important;
+        max-width: 63px !important;
+    }
+
+    .housing-host-picture {
+        width:32px !important;
+        height: 32px !important;
+    }
+}
+

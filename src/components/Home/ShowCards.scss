@@ -9,17 +9,20 @@
     row-gap: 40px;
 }
 
-@media screen and (max-width: 375px) {  
-    .card-container {
-        background-color: unset;
-        padding: 0px;
-        border-radius: unset;
-    }
-    
-}
+
 
 @media screen and (max-width:1300px) {
     .card-container {
         gap: 30px;
     }
-  }
+}
+
+@media screen and (max-width:425px) {  
+    .card-container {
+        background-color: unset;
+        padding: 0px;
+        border-radius: unset;
+        gap: 40px;
+        
+    }      
+}

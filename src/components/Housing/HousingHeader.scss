@@ -27,17 +27,115 @@
 
 .housing-tag {
     width: fit-content;
-    padding-inline: 1rem;
+    padding: 0.2rem 1rem;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FF6060;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 12px;
     font-weight: 700;
     font-size: 0.875rem;
     line-height: 143%;
     text-align: center;
 }
 
+@media screen and (max-width: 1350px) {
+    .housing-title {
+        font-size: 28px;
+    }
+
+    .housing-description-p{
+        font-size: 16px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1060px) {
+    .top-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .housing-header {
+        width: 190%;
+
+        .housing-title {
+            font-size: 22px;
+        }
+    }
+
+    .host-content {
+        
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1rem;
+        align-content: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .top-container {
+        flex-direction: column;
+        gap: 1rem;
+    
+        .housing-header {
+            width: 100%;
+            gap: 1rem;
+          
+        }
+
+        .host-content {
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+        }
+        
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .housing-header {
+        width: 100%;
+        gap: 1rem;
+
+        .housing-title {
+            font-size: 22px;
+        }
+
+        .housing-location {
+            font-size: 16px;
+        }
+
+        .housing-tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .housing-header {
+        width: 100%;
+        gap: 1rem;
+
+        .housing-title {
+            font-size: 18px;
+        }
+
+        .housing-location {
+            font-size: 14px;
+        }
+
+        .housing-tag {
+            font-size: 10px;
+            padding: 0.2rem 0.5rem;
+        }
+    }
+}

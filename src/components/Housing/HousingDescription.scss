@@ -60,3 +60,35 @@
         color: #000000;
     }
 }
+
+
+@media screen and (max-width: 1350px) {
+    .collapse_header_title {
+        font-size: 16px;
+    }
+
+    .housing-description-p {
+        font-size: 16px !important;
+    }
+}    
+
+@media screen and (max-width:425px) {
+    .collapse_header_title {
+        font-size: 13px !important;
+    }
+
+    .collapse_header_icon {
+        font-size:16px !important;
+    }
+
+    .housing-equipments-list {
+        font-size: 12px !important;
+    }
+
+    .housing-description-p {
+        font-size: 12px !important;
+    }
+    
+}
+   
+    

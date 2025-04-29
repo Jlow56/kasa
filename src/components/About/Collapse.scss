@@ -72,3 +72,13 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+ .collapse_content  {
+    padding: revert !important; 
+
+    .about-p {
+      font-size: 13px !important;
+    }
+ }
+}

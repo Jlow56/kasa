@@ -1,6 +1,6 @@
 .housing-card-container {
-  height: 335px;
-  width:335px;
+  height: 340px;
+  width: 340px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -44,4 +44,22 @@
     justify-content: flex-start;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+
+@media screen and (max-width: 425px) {
+  .housing-card-container {
+    width: 335px;
+    height: 255px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px;
+  }
+  .housing-card-img {
+    width:335px !important;
+    height: 255px !important;
+    object-fit: cover;
+  }
+  
 }
