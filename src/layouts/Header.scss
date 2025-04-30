@@ -12,18 +12,21 @@
     padding: 0;
     justify-content: space-between;
     width: 100%;
+
+    .header-navbar-ul {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+        .nav-link {
+            text-decoration: underline;  
+        }
 }
 
-.header-navbar-ul {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-
-@media screen and (max-width: 580px) {
+@media screen and (width <= 580px) {
     .header-navbar-ul {
         font-size: 1rem;
         gap: 2rem;
@@ -36,7 +39,7 @@
     }
 }
 
-@media screen and (max-width : 375px) {
+@media screen and (width <= 375px) {
     .header {
         width: 100%;;
     }

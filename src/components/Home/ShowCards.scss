@@ -11,16 +11,16 @@
 
 
 
-@media screen and (max-width:1300px) {
+@media screen and (width <=1300px) {
     .card-container {
         gap: 30px;
     }
 }
 
-@media screen and (max-width:425px) {  
+@media screen and (width <=425px) {  
     .card-container {
         background-color: unset;
-        padding: 0px;
+        padding: 0;
         border-radius: unset;
         gap: 40px;
         

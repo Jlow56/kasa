@@ -1,7 +1,8 @@
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
     .span.housing-rating-star {
         font-size: 13px;
     }
+
     .housing-rating-star-grey {
         font-size: 13px;
     }

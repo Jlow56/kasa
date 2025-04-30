@@ -1,4 +1,4 @@
-.collapse_header {
+.collapse-header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,20 +9,20 @@
     padding-inline: 1rem;
     border-radius: 10px;
 
-    .collapse_header_title {
+    .collapse-header-title {
         font-weight: 700;
         font-size: 18px;
         line-height: 143%;
-        color: #FFFFFF;
+        color: #FFF;
     }
     
-    .collapse_header_icon {
+    .collapse-header-icon {
         font-size: 24px;
-        color: #FFFFFF;
+        color: #FFF;
     }
 }
 
-    .collapse_content {
+    .collapse-content {
         background-color: #F6F6F673;
         padding: 2rem 1.5rem;
     }
@@ -39,7 +39,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 143%;
-        color: #000000;
+        color: #000;
         
     }
 }
@@ -52,18 +52,17 @@
 
     .housing-equipments-list {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
         font-weight: 400;
         font-size: 18px;
         line-height: 143%;
-        color: #000000;
+        color: #000;
     }
 }
 
 
-@media screen and (max-width: 1350px) {
-    .collapse_header_title {
+@media screen and (width <= 1350px) {
+    .collapse-header-title {
         font-size: 16px;
     }
 
@@ -72,12 +71,12 @@
     }
 }    
 
-@media screen and (max-width:425px) {
-    .collapse_header_title {
+@media screen and (width <=425px) {
+    .collapse-header-title {
         font-size: 13px !important;
     }
 
-    .collapse_header_icon {
+    .collapse-header-icon {
         font-size:16px !important;
     }
 

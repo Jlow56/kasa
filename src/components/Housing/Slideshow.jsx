@@ -45,11 +45,11 @@ function SlideShow({ img }) {
       </div>
       {img.length > 1 && (
         <>
-          <div className="slideshow_controls">
-            <i className="slideshow_controls_chevron" onClick={onPrev}>
+          <div className="slideshow-controls">
+            <i className="slideshow-controls-chevron" onClick={onPrev}>
               <FontAwesomeIcon icon={faChevronLeft} />
             </i>
-            <i className="slideshow_controls_chevron" onClick={onNext}>
+            <i className="slideshow-controls-chevron" onClick={onNext}>
               <FontAwesomeIcon icon={faChevronRight} />
             </i>
           </div>

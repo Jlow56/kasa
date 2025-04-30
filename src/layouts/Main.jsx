@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Main.css";
+import "./Main.scss";
 
 const Main = ({ children }) => {
   return <main className="main-container w1240">{children}</main>;

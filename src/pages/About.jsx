@@ -1,8 +1,7 @@
 import React from "react";
 import Banner from "../layouts/Banner";
 import Collapse from "../components/About/Collapse";
-import about from "../datas/about.json";    
-import "./About.css";                     
+import about from "../datas/about.json";                        
 
 const AboutPage = () => {
   return (

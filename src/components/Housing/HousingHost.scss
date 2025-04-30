@@ -7,8 +7,7 @@
 
 .housing-host {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-content: center;
     align-items: center;
     gap: 0.5rem;
@@ -21,8 +20,7 @@
         max-width: 74px;
         max-height: fit-content;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        flex-flow: column wrap;
         align-content: flex-start;
         align-items: flex-start;
         text-align: right;
@@ -36,7 +34,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
     .housing-host-name {
         font-size: 12px !important;
         max-width: 63px !important;

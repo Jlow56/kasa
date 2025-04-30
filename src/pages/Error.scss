@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
     .not-found-container {
        height: auto;
     }
@@ -54,7 +54,7 @@
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
     .not-found-h2 {
         font-size: 6rem !important;
     }

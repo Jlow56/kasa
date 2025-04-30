@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (width <= 375px) {
     .main-container {
         width: 100%;
         height: auto;

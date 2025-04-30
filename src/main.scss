@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,28 +19,29 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote::before, blockquote::after,
+q::before, q::after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -60,8 +60,9 @@ body {
   padding-top: 3rem;
   height: auto;
   margin: 0 auto;
-  background-color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF;
+  font-family: Montserrat, sans-serif;
+  line-height: 1;
 }
 
 .flex {
@@ -92,7 +93,7 @@ a:active {
 
 /* media screen */
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
   #root {
     width: 90%;
     height: auto;

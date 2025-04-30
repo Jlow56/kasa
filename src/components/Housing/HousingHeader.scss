@@ -11,6 +11,7 @@
     line-height: 143%;
     color: #FF6060;
 }
+
 .housing-location { 
     font-weight: 500;
     font-size: 18px;
@@ -33,7 +34,7 @@
     justify-content: center;
     align-items: center;
     background-color: #FF6060;
-    color: #FFFFFF;
+    color: #FFF;
     border-radius: 12px;
     font-weight: 700;
     font-size: 0.875rem;
@@ -41,7 +42,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (width <= 1350px) {
     .housing-title {
         font-size: 28px;
     }
@@ -53,7 +54,7 @@
     
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (width <= 1060px) {
     .top-container {
         flex-direction: column;
         gap: 1rem;
@@ -68,17 +69,15 @@
     }
 
     .host-content {
-        
         flex-direction: row-reverse;
         align-items: center;
         gap: 1rem;
-        align-content: center;
-        justify-content: space-between;
+        place-content: center space-between;
         width: 100%;
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (width <= 820px) {
     .top-container {
         flex-direction: column;
         gap: 1rem;
@@ -100,7 +99,7 @@
 
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (width <= 530px) {
     .housing-header {
         width: 100%;
         gap: 1rem;
@@ -120,7 +119,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
     .housing-header {
         width: 100%;
         gap: 1rem;
