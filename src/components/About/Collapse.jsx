@@ -1,52 +1,45 @@
-import React, { useState, useRef} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import React, { useState, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./Collapse.scss";
 
 const Collapse = ({ title, children }) => {
-    const [isVisible, setIsVisible] = useState(false); // affichage DOM
-    const [isOpen, setIsOpen] = useState(false);        // animation d'ouverture
-    const contentRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef(null);
 
-    const toggleCollapse = () => {
-        if (isOpen) {
-            // On commence par fermer visuellement
-            setIsOpen(false);
-            // Puis on retire du DOM après la transition (0.5s = 500ms)
-            setTimeout(() => setIsVisible(false), 500);
-        } else {
-            // On affiche la div dans le DOM d’abord
-            setIsVisible(true);
-            // Et on l’ouvre juste après (délai pour laisser le temps au DOM d’ajouter la div)
-            setTimeout(() => setIsOpen(true), 10);
-        }
-    };
+  const toggleCollapse = () => {
+    setIsOpen((prev) => !prev);
+  };
 
-    return (
-        <>
-            <div onClick={toggleCollapse} className="collapse-header">
-                <h2 className="collapse-header-title">{title}</h2>
-                <i className={`collapse-header-icon ${isOpen ? "rotate" : ""}`}>
-  {isOpen ? (
-    <FontAwesomeIcon icon={faChevronDown} />
-  ) : (
-    <FontAwesomeIcon icon={faChevronUp} />
-  )}
-</i>
-            </div>
+  return (
+    <>
+      <div
+        onClick={toggleCollapse}
+        className="collapse-header"
+        role="button"
+        aria-expanded={isOpen}
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") toggleCollapse();
+        }}
+      >
+        <h2 className="collapse-header-title">{title}</h2>
+        <i className={`collapse-header-icon ${isOpen ? "rotate" : ""}`}>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </i>
+      </div>
 
-            {isVisible && (
-                <div
-                    ref={contentRef}
-                    className={`collapse-content ${isOpen ? "open" : "closed"}`}
-                >
-                    <div className="about-p">
-                        {children}
-                    </div>
-                </div>
-            )}
-        </>
-    );
+      <div
+        ref={contentRef}
+        className="collapse-content"
+        style={{
+          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
+        }}
+      >
+       {children}
+      </div>
+    </>
+  );
 };
 
 export default Collapse;
