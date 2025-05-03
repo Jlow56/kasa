@@ -4,7 +4,7 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <header className= 'header w1240 flex'>
+    <header className= 'header flex'>
         <nav className='header-navbar'>
             <NavLink to="/">
                 <div>

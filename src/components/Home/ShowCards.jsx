@@ -1,6 +1,4 @@
-// src/components/ShowCards.jsx
 import React from "react";
-import PropTypes from "prop-types";
 import HomeCard from "./HomeCard";
 import "./ShowCards.scss";
 
@@ -19,15 +17,5 @@ function ShowCards({ accomodations }) {
     </section>
   );
 }
-
-// ShowCards.propTypes = {
-//   accomodations: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       cover: PropTypes.string.isRequired,
-//       title: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-// };
 
 export default ShowCards;

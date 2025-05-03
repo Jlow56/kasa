@@ -9,20 +9,16 @@
     row-gap: 40px;
 }
 
-
-
-@media screen and (width <=1300px) {
+@media screen and (width <=1024px) {
     .card-container {
         gap: 30px;
-    }
+        border-radius: unset;
+    }  
 }
 
-@media screen and (width <=425px) {  
+@media screen and (width <=768px) {
     .card-container {
-        background-color: unset;
-        padding: 0;
-        border-radius: unset;
-        gap: 40px;
-        
-    }      
+      background-color: unset;
+      padding: 0;
+    }
 }
