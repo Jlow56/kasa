@@ -1,5 +1,5 @@
 import React from 'react';
-import Collapse from "../About/Collapse";
+import Collapse from "../../layouts/Collapse";
 import "./HousingDescription.scss";
 
 function HousingDescription({ description, equipments }) {
@@ -20,7 +20,6 @@ function HousingDescription({ description, equipments }) {
             </Collapse>
         </div>
     </>
-      
     );     
 }
 

@@ -1,45 +1,21 @@
-.collapse-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    height: 52px;
-    background-color: #FF6060;
-    padding-inline: 1rem;
-    border-radius: 10px;
-
-    .collapse-header-title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 143%;
-        color: #FFF;
-    }
-    
-    .collapse-header-icon {
-        font-size: 24px;
-        color: #FFF;
-    }
-}
-
-    .collapse-content {
-        background-color: #F6F6F673;
-    }
-
-
-
 .housing-description-container {
     display: flex;
     flex-direction: column;
     width: 47%;
     height: auto;
 
+    .collapse-header {
+        gap: 1.5rem;
+        padding-inline: 1rem;
+    }
+    
     .housing-description-p {
         font-weight: 400;
         font-size: 18px;
         line-height: 143%;
         color: #000;
-        
+        padding: 2rem;
+        height: auto;
     }
 }
 
@@ -56,19 +32,9 @@
         font-size: 18px;
         line-height: 143%;
         color: #000;
+        padding: 2rem;
     }
 }
-
-
-@media screen and (width <= 1350px) {
-    .collapse-header-title {
-        font-size: 16px;
-    }
-
-    .housing-description-p {
-        font-size: 16px !important;
-    }
-}    
 
 @media screen and (width <=425px) {
     .collapse-header-title {

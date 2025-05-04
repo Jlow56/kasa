@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./Collapse.scss";
+import "../components/About/AboutContent.scss";
+
 
 const Collapse = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +15,7 @@ const Collapse = ({ title, children }) => {
 
   return (
     <>
-      <div
-        onClick={toggleCollapse}
-        className="collapse-header"
-        role="button"
-        aria-expanded={isOpen}
-        tabIndex={0}
+      <div onClick={toggleCollapse} className="collapse-header" role="button" aria-expanded={isOpen} tabIndex={0}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") toggleCollapse();
         }}

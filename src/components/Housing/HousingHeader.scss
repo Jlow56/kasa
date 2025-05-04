@@ -99,7 +99,7 @@
 
 }
 
-@media screen and (width <= 530px) {
+@media screen and (width <= 768px) {
     .housing-header {
         width: 100%;
         gap: 1rem;
@@ -113,8 +113,24 @@
         }
 
         .housing-tag {
-            font-size: 0.75rem;
+            font-size: 10px;
             padding: 0.2rem 0.5rem;
+        }
+    }
+    
+}
+
+@media screen and (width <= 530px) {
+    .housing-header {
+        width: 100%;
+        gap: 1rem;
+
+        .housing-title {
+            font-size: 22px;
+        }
+
+        .housing-location {
+            font-size: 16px;
         }
     }
 }
@@ -130,11 +146,6 @@
 
         .housing-location {
             font-size: 14px;
-        }
-
-        .housing-tag {
-            font-size: 10px;
-            padding: 0.2rem 0.5rem;
         }
     }
 }

@@ -12,22 +12,25 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
-    }
 
-    .about-p {
-        padding: 1rem;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 143%;
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out;
+        .collapse-header {
+            width: 100%;
+        }
+
+        .about-p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 143%;
+            padding: 1rem;
+            height: auto;
+        }
     }
 }
 
 @media screen and (width <= 768px) {
     .about-section {
       width: 100%;
-      
+        
         .about-container {
             width: 100%;
         }
