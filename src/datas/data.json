@@ -247,37 +247,6 @@
 		]
 	},
 	{
-		"id": "cb2f9222",
-		"title": "Suite familiale",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg",
-		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-4.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-5.jpg"
-		],
-		"description": "Paris vous tend les bras ! En famille ou entre amis, venez découvrir la ville de l'amour dans un appartement de goût. Vous pourrez profiter de tous les commerces seulement à quelques minutes de l'appartement. Sa proximité avec la gare Montparnasse en fait également un choix idéal pour celles et ceux qui doivent prendre un train.",
-		"host": {
-			"name": "Adrien Chiran",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-6.jpg"
-		},
-		"rating": "4",
-		"location": "Ile de France - Paris 14e",
-		"equipments": [
-			"Climatisation",
-			"Machine à laver",
-			"Sèche Cheveux",
-			"Wi-fi",
-			"Parking"
-		],
-		"tags": [
-			"Montparnasse",
-			"Commerces",
-			"Famille"
-		]
-	},
-	{
 		"id": "d60ca600",
 		"title": "Appartement moderne sur parc",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-9-1.jpg",
@@ -536,30 +505,7 @@
 			"Apt de Charme"
 		]
 	},
-	{
-		"id": "2139a317",
-		"title": "Cheap - Chambre Paris 20",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg",
-		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg"
-		],
-		"description": "Cette chambre dispose de toutes les facilités nécessaires. Proche métro et commerces.",
-		"host": {
-			"name": "Hugo Perrier",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
-		},
-		"rating": "2",
-		"location": "Ile de France - Paris 20e",
-		"equipments": [
-			"Bouilloire",
-			"Wi-fi",
-			"Micro-Ondes"
-		],
-		"tags": [
-			"Vue Parc",
-			"Métros"
-		]
-	},
+
 	{
 		"id": "6ff132c6",
 		"title": "Charmant studio",

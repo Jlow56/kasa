@@ -27,6 +27,20 @@
     }
 }
 
+.page-about {
+  .footer {
+    height: 20vh;
+  }
+
+  .main-container {
+    height: 64vh;
+  }
+
+  .header {
+    height: 7vh;
+  }
+}
+
 @media screen and (width <= 768px) {
     .about-section {
       width: 100%;

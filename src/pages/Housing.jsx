@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useParams, useLocation } from 'react-router-dom';
 import SlideShow from "../components/Housing/SlideShow.jsx";
 import HousingDetails from "../components/Housing/HousingDetails"; 
 import ErrorPage from "./Error";
-import { useParams } from 'react-router-dom';
 import data from "../datas/data.json";
 import "./Housing.scss";
 
-const Housing = () => {
+function Housing() {
   const { id } = useParams();
-  const housingData = data.find(housingData => housingData.id === id);
+  const location = useLocation();
+
+  const housingData = data.find(housing => housing.id === id);
+
+  useEffect(() => {
+    const path = location.pathname;
+
+    if (/^\/Housing\/[^/]+$/.test(path)) {
+      document.body.classList.add('page-housing');
+    }
+
+    return () => {
+      document.body.classList.remove('page-housing');
+    };
+  }, [location]);
 
   if (!housingData) {
     return <ErrorPage />;
@@ -20,6 +34,6 @@ const Housing = () => {
       <HousingDetails housingData={housingData} /> 
     </section>
   );
-};
+}
 
 export default Housing;

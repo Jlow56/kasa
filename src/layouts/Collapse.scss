@@ -32,8 +32,9 @@
 .collapse-content {
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
-  background-color: #f6f6f673;
+  background-color: rgb(216, 213, 213);
   border-radius: 5px;
+  width: 100%;
 }
 
 @media screen and (width <= 768px) {

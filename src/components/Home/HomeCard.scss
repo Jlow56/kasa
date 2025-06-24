@@ -1,13 +1,13 @@
 .housing-card-container {
-  flex: 100%;
+  flex: 30%;
   height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
   
   .housing-card {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 340px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
