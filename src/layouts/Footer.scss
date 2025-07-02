@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 1rem;
     }
     
     .footer-text {
@@ -21,7 +22,10 @@
         text-align: center;
         vertical-align: bottom;
         color: #FFF;
+        display: flex;
+        align-items: center;
     }
+    
 }
 
 

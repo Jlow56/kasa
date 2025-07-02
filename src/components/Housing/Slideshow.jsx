@@ -30,18 +30,8 @@ function SlideShow({ img }) {
 
   return (
     <section className="slider-section">
-      <div
-        className="slideshow-img-container"
-        style={{
-          transform: `translateX(-${slideId * imgWidth}px)`
-        }}
-      >
-        <img
-          className="slideshow-img"
-          alt={`slide-${slideId}`}
-          src={img[slideId]}
-          key={slideId}
-        />
+      <div className="slideshow-img-container" style={{transform: `translateX(-${slideId * imgWidth}px)`}}>
+        <img className="slideshow-img" alt={`slide-${slideId}`} src={img[slideId]} key={slideId}/>
       </div>
       {img.length > 1 && (
         <>
