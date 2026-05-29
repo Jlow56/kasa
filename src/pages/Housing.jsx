@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import SlideShow from "../components/Housing/SlideShow.jsx";
+import Slideshow from "../components/Housing/Slideshow.jsx";
 import HousingDetails from "../components/Housing/HousingDetails"; 
 import ErrorPage from "./Error";
 import data from "../datas/data.json";
@@ -30,7 +30,7 @@ function Housing() {
 
   return (
     <section key={housingData.id} className="housing-container">
-      <SlideShow img={housingData.pictures} />
+      <Slideshow img={housingData.pictures} />
       <HousingDetails housingData={housingData} /> 
     </section>
   );
